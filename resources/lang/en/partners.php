@@ -1,0 +1,45 @@
+<?php
+
+return [
+    'partners' => 'Partners',
+    'partner' => 'Partner',
+    'list' => 'Partners List',
+    'create' => 'Create Partner',
+    'edit' => 'Edit Partner',
+    'delete' => 'Delete Partner',
+    'name_en' => 'Name (العربي)',
+    'name_ar' => 'Name (Arabic)',
+    'position_en' => 'Position (English)',
+    'position_ar' => 'Position (Arabic)',
+    'description_en' => 'Description (English)',
+    'description_ar' => 'Description (Arabic)',
+    'image' => 'Image',
+    'email' => 'Email',
+    'phone' => 'Phone',
+    'linkedin' => 'LinkedIn Profile',
+    'website' => 'Website',
+    'is_active' => 'Active Status',
+    'order' => 'Display Order',
+    'actions' => 'Actions',
+    'save' => 'Save Partner',
+    'update' => 'Update Partner',
+    'cancel' => 'Cancel',
+    'confirm_delete' => 'Are you sure you want to delete this partner?',
+    'created' => 'Partner created successfully',
+    'updated' => 'Partner updated successfully',
+    'deleted' => 'Partner deleted successfully',
+    'update_failed' => 'Failed to update partner',
+    'delete_failed' => 'Failed to delete partner',
+
+    // Create & Edit Form labels and buttons
+    'save' => 'Save Partner',
+    'cancel' => 'Cancel',
+
+    // Validation messages
+    'creation_success' => 'Partner created successfully',
+    'update_success' => 'Partner updated successfully',
+    'delete_success' => 'Partner deleted successfully',
+    'creation_failed' => 'Failed to create partner',
+    'update_failed' => 'Failed to update partner',
+    'delete_failed' => 'Failed to delete partner',
+];

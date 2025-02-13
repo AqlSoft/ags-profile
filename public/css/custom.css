@@ -1,0 +1,210 @@
+/* Custom CSS */
+[dir="rtl"] {
+    font-family: 'Cairo', sans-serif;
+}
+
+[dir="rtl"] .navbar .dropdown ul {
+    left: auto;
+    right: 0;
+}
+
+[dir="rtl"] .navbar .dropdown ul a i {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+[dir="rtl"] .section-header {
+    text-align: right;
+}
+
+[dir="rtl"] .breadcrumbs .page-header h2 {
+    text-align: right;
+}
+
+[dir="rtl"] .about .content ul i {
+    float: right;
+    margin-left: 7px;
+    margin-right: 0;
+}
+
+[dir="rtl"] .services .service-item {
+    text-align: right;
+}
+
+[dir="rtl"] .portfolio-description {
+    text-align: right;
+}
+
+[dir="rtl"] .team .member {
+    text-align: right;
+}
+
+[dir="rtl"] .contact .info-container {
+    text-align: right;
+}
+
+[dir="rtl"] .contact .info-item {
+    text-align: right;
+}
+
+[dir="rtl"] .contact .info-item i {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+/* Custom Colors */
+:root {
+    --primary-color: #008374;
+    --secondary-color: #f85a40;
+}
+
+/* Hero Section Enhancements */
+.hero {
+    background: linear-gradient(rgba(0, 131, 116, 0.9), rgba(0, 131, 116, 0.9)), url('../impact/assets/img/hero-bg.jpg') center center;
+    background-size: cover;
+    padding: 140px 0 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Services Section Enhancements */
+.services .service-item {
+    padding: 40px;
+    background: #fff;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.services .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.services .service-item .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .service-item .icon i {
+    font-size: 36px;
+    color: #fff;
+}
+
+/* Team Section Enhancements */
+.team .member {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.team .member:hover {
+    transform: translateY(-10px);
+}
+
+.team .member img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Contact Section Enhancements */
+.contact .info-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact .php-email-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Newsletter Section Enhancements */
+.newsletter {
+    background: linear-gradient(rgba(0, 131, 116, 0.9), rgba(0, 131, 116, 0.9)), url('../impact/assets/img/cta-bg.jpg') center center;
+    background-size: cover;
+    padding: 80px 0;
+    color: #fff;
+}
+
+.newsletter .section-header h2,
+.newsletter .section-header p {
+    color: #fff;
+}
+
+.newsletter form {
+    background: #fff;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.newsletter form input[type="email"] {
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.newsletter form button {
+    border-radius: 50px;
+    padding: 10px 30px;
+    background: var(--primary-color);
+    border: 0;
+    color: #fff;
+}
+
+/* Footer Enhancements */
+.footer {
+    background: #1f1f24;
+    padding: 60px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .footer-info h3 {
+    font-size: 28px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer .social-links a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .social-links a:hover {
+    background: var(--primary-color);
+}
