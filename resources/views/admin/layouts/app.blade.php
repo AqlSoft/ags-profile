@@ -230,7 +230,6 @@
             });
         });
     </script>
-
     @stack('scripts')
 </body>
 

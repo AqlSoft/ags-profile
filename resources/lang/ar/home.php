@@ -25,6 +25,31 @@ return [
     'about_uo_list_item_4_bold' => 'أصالة وتراث: ',
     'about_uo_list_item_4_text' => 'تعكس التمور السعودية تاريخاً عريقاً وتراثاً زراعياً يعود لقرون، مما يجعلها رمزاً للثقافة والهوية السعودية.',
 
+    // home_icon_box_1_title
+    'home_icon_box_1_title' => 'تخطيط مبتكر',
+    'home_icon_box_2_title' => 'جودة عالية',
+    'home_icon_box_3_title' => 'نضارة ونقاء',
+    'home_icon_box_4_title' => 'قيمة عالية',
+
+    // Stats Section
+    'stats' => 'الاحصائيات',
+    'stats_message' => 'التزامنا بالجودة والابتكار يدفعنا لتقديم أفضل المنتجات والخدمات لعملائنا.',
+    'stats_1_title' => 'سنوات الخبرة',
+    'stats_1_message' => 'تضعنا فى صدارة المنافسين، وتعزز انتماء عملاءنا',
+    'stats_2_title' => 'عميل يشعر بالسعادة',
+    'stats_2_message' => 'بما نقدمه لهم من جودة ومنتجات وحلول مبتكرة',
+    'stats_3_title' => 'عمليات التجارة',
+    'stats_3_message' => 'ترسخ دورنا كوسيط بين المنتج والمستهلك',
+    'stats_4_title' => 'ساعات الدعم',
+    'stats_4_message' => 'نعزز انتماء عملاءنا واصرارهم علينا',
+
+    // Call To Action
+    'call_to_action_heading' => 'Call To Action',
+    'call_to_action_message' => 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.',
+    'call_to_action_button' => 'Call To Action',
+
     // Services Section
     'services'      => 'خدماتنا',
     'services_message' => 'نقدم خدمات حصرية لتحقيق النجاح الذي تستحقه',

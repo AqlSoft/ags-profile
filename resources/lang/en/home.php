@@ -25,6 +25,29 @@ return [
     'about_uo_list_item_4_bold' => 'Tradition and Heritage: ',
     'about_uo_list_item_4_text' => 'Saudi dates reflect a long history and an agricultural heritage that dates back centuries, making them a symbol of Saudi culture and identity.',
 
+    // home_icon_box_1_title
+    'home_icon_box_1_title' => 'innovative Planning',
+    'home_icon_box_2_title' => 'High Quality',
+    'home_icon_box_3_title' => 'Modern Storage',
+    'home_icon_box_4_title' => 'High Value',
+
+    // Stats Section
+    'stats' => 'Statistics',
+    'stats_message' => 'Our commitment to quality and innovation drives us to provide the best products and services to our customers.',
+    'stats_1_title' => 'Years of Experience',
+    'stats_1_message' => 'We are leading the competitors, and enhancing customer loyalty',
+    'stats_2_title' => 'Happy Customer',
+    'stats_2_message' => 'We are providing them with high-quality products and innovative solutions',
+    'stats_3_title' => 'Trading Operations',
+    'stats_3_message' => 'Consolidating our role as a mediator between the producer and the consumer',
+    'stats_4_title' => 'Support Hours',
+    'stats_4_message' => 'Enhancing customer loyalty and their insistence on us',
+
+    // Call To Action
+    'call_to_action_heading' => 'GET IN TOUCH',
+    'call_to_action_message' => 'Get in touch with us to know more about our products and services and how we can help you achieve your business goals.',
+    'call_to_action_button' => 'Contact Us',
+
     // Services Section
     'services' => 'Our Services',
     'services_message' => 'We offer exclusive services to achieve the success you deserve',
@@ -41,6 +64,34 @@ return [
     'service_6_title' => 'Technical Support',
     'service_6_desc' => 'Expert consultation on date storage, handling, and distribution.',
     'read_more' => 'Read More',
+
+    // Testimonials Section
+    'testimonials' => 'Testimonials',
+    'testimonials_message' => 'What our customers say about us',
+
+    'testimonials_1_client' => 'Mohamed Badran Al-Badri',
+    'testimonials_1_position' => 'EG - Merchant',
+    'testimonials_1_message' => "I recently used AG-Stores for storing services my food materials, and I must say, the experience was exceptional. The state-of-the-art warehousing facilities with temperature and humidity control ensured that the quality of my products was maintained perfectly. I highly recommend their services to anyone in need of reliable storage solutions.",
+
+    'testimonials_2_client' => 'Fahd Bn Thamer Al-Shari',
+    'testimonials_2_position' => 'BH - CEO & Founder',
+    'testimonials_2_message' => 'The quality control measures at AG-Stores are truly impressive. Every stage of the process is meticulously monitored, ensuring that only the finest dates reach the customers. I felt confident knowing that my products were in safe hands. Thank you for your dedication to quality!',
+
+    'testimonials_3_client' => 'Safeya Morad Al-Shemari',
+    'testimonials_3_position' => 'KW - General Manager',
+    'testimonials_3_message' => 'The distribution services provided by AG-Stores are top-notch. Their efficient channels ensured that my products reached both local and international markets without any issues. The professionalism and reliability of their team made the entire process smooth and stress-free.',
+
+    'testimonials_4_client' => 'Abdullah Salman Al-Harthi',
+    'testimonials_4_position' => 'CEO & Founder',
+    'testimonials_4_message' => 'I was extremely satisfied with the custom packaging solutions offered by AG-Stores. They tailored the packaging to meet my specific market requirements, which not only preserved the quality of my dates but also enhanced their presentation. I highly recommend their packaging services to other businesses.',
+
+    'testimonials_5_client' => 'Nazeera Al-Khalifa',
+    'testimonials_5_position' => 'UAE - Sales Manager',
+    'testimonials_5_message' => 'The export services at AG-Stores are comprehensive and highly efficient. From documentation to logistics management, every detail was handled with utmost care and professionalism. My products reached their destination on time and in perfect condition. I am very pleased with their services.',
+
+    'testimonials_6_client' => 'Salman Salih Al-Dhaleh',
+    'testimonials_6_position' => 'JDN - Merchant',
+    'testimonials_6_message' => 'The technical support provided by AG-Stores was invaluable. Their expert consultation on date storage, handling, and distribution helped me optimize my processes and maintain the quality of my products. I am grateful for their knowledgeable and friendly team.',
 
     // Footer Section
     'footer_about' => 'We are committed to providing the finest Saudi dates with the highest quality standards. Our products reflect the rich heritage and exceptional quality of Saudi dates.',

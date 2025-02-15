@@ -24,6 +24,7 @@
     <!-- Main CSS File -->
     <link href="{{ asset('impact/assets/css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/custom.css') }}" rel="stylesheet">
     @if(session('locale') == 'ar')
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
@@ -89,8 +90,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>لغة التطبيق: {{ app()->getLocale() }}</li>
-                        <li>تكوين الجلسة: {{ session('locale') }}</li>
+
                     </ul>
 
 

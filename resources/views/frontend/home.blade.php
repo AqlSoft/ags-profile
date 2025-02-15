@@ -29,28 +29,28 @@
                 <div class="col-xl-3 col-md-6">
                     <div class="icon-box">
                         <div class="icon"><i class="bi bi-easel"></i></div>
-                        <h4 class="title"><a href="" class="stretched-link">Lorem Ipsum</a></h4>
+                        <h4 class="title"><a href="" class="stretched-link">{{ __('home.home_icon_box_1_title') }}</a></h4>
                     </div>
                 </div><!--End Icon Box -->
 
                 <div class="col-xl-3 col-md-6">
                     <div class="icon-box">
                         <div class="icon"><i class="bi bi-gem"></i></div>
-                        <h4 class="title"><a href="" class="stretched-link">Sed ut perspiciatis</a></h4>
+                        <h4 class="title"><a href="" class="stretched-link">{{ __('home.home_icon_box_2_title') }}</a></h4>
                     </div>
                 </div><!--End Icon Box -->
 
                 <div class="col-xl-3 col-md-6">
                     <div class="icon-box">
                         <div class="icon"><i class="bi bi-geo-alt"></i></div>
-                        <h4 class="title"><a href="" class="stretched-link">Magni Dolores</a></h4>
+                        <h4 class="title"><a href="" class="stretched-link">{{ __('home.home_icon_box_3_title') }}</a></h4>
                     </div>
                 </div><!--End Icon Box -->
 
                 <div class="col-xl-3 col-md-6">
                     <div class="icon-box">
                         <div class="icon"><i class="bi bi-command"></i></div>
-                        <h4 class="title"><a href="" class="stretched-link">Nemo Enim</a></h4>
+                        <h4 class="title"><a href="" class="stretched-link">{{ __('home.home_icon_box_4_title') }}</a></h4>
                     </div>
                 </div><!--End Icon Box -->
 
@@ -179,20 +179,31 @@
                         <div class="stats-item d-flex">
                             <i class="bi bi-emoji-smile flex-shrink-0"></i>
                             <div>
-                                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                                <span data-purecounter-start="0" data-purecounter-end="5300" data-purecounter-duration="1"
                                     class="purecounter"></span>
-                                <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+                                <p><strong>{{__('home.stats_2_title')}}</strong> <span>{{__('home.stats_2_message')}}</span></p>
                             </div>
                         </div>
                     </div><!-- End Stats Item -->
 
                     <div class="col-lg-6">
                         <div class="stats-item d-flex">
-                            <i class="bi bi-journal-richtext flex-shrink-0"></i>
+                            <i class="bi bi-calendar-event flex-shrink-0"></i>
                             <div>
                                 <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
                                     class="purecounter"></span>
-                                <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
+                                <p><strong>{{__('home.stats_1_title')}}</strong> <span>{{__('home.stats_1_message')}}</span></p>
+                            </div>
+                        </div>
+                    </div><!-- End Stats Item -->
+
+                    <div class="col-lg-6">
+                        <div class="stats-item d-flex">
+                            <i class="bi bi-briefcase flex-shrink-0"></i>
+                            <div>
+                                <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
+                                    class="purecounter"></span>
+                                <p><strong>{{__('home.stats_3_title')}}</strong> <span>{{__('home.stats_3_message')}}</span></p>
                             </div>
                         </div>
                     </div><!-- End Stats Item -->
@@ -201,20 +212,9 @@
                         <div class="stats-item d-flex">
                             <i class="bi bi-headset flex-shrink-0"></i>
                             <div>
-                                <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
+                                <span data-purecounter-start="0" data-purecounter-end="150526" data-purecounter-duration="1"
                                     class="purecounter"></span>
-                                <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
-                            </div>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-6">
-                        <div class="stats-item d-flex">
-                            <i class="bi bi-people flex-shrink-0"></i>
-                            <div>
-                                <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
-                                    class="purecounter"></span>
-                                <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+                                <p><strong>{{__('home.stats_4_title')}}</strong> <span>{{__('home.stats_4_message')}}</span></p>
                             </div>
                         </div>
                     </div><!-- End Stats Item -->
@@ -238,11 +238,9 @@
             <div class="col-xl-10">
                 <div class="text-center">
                     <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox play-btn"></a>
-                    <h3>Call To Action</h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.</p>
-                    <a class="cta-btn" href="#">Call To Action</a>
+                    <h3>{{__('home.call_to_action_heading')}}</h3>
+                    <p>{{__('home.call_to_action_message')}}</p>
+                    <a class="cta-btn" href="#">{{__('home.call_to_action_button')}}</a>
                 </div>
             </div>
         </div>
@@ -340,8 +338,8 @@
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>{{__('home.testimonials')}}</h2>
+        <p>{{__('home.testimonials_message')}}</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -377,34 +375,15 @@
                 <div class="swiper-slide">
                     <div class="testimonial-item">
                         <img src="{{ asset('impact/assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img" alt="">
-                        <h3>Saul Goodman</h3>
-                        <h4>Ceo &amp; Founder</h4>
+                        <h3>{{__('home.testimonials_1_client')}}</h3>
+                        <h4>{{__('home.testimonials_1_position')}}</h4>
                         <div class="stars">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                 class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
                         <p>
                             <i class="bi bi-quote quote-icon-left"></i>
-                            <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                                Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                            <i class="bi bi-quote quote-icon-right"></i>
-                        </p>
-                    </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                    <div class="testimonial-item">
-                        <img src="{{ asset('impact/assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
-                        <h3>Sara Wilsson</h3>
-                        <h4>Designer</h4>
-                        <div class="stars">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                        </div>
-                        <p>
-                            <i class="bi bi-quote quote-icon-left"></i>
-                            <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
-                                malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                            <span>{{__('home.testimonials_1_message')}}</span>
                             <i class="bi bi-quote quote-icon-right"></i>
                         </p>
                     </div>
@@ -413,16 +392,15 @@
                 <div class="swiper-slide">
                     <div class="testimonial-item">
                         <img src="{{ asset('impact/assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img" alt="">
-                        <h3>Jena Karlis</h3>
-                        <h4>Store Owner</h4>
+                        <h3>{{__('home.testimonials_2_client')}}</h3>
+                        <h4>{{__('home.testimonials_2_position')}}</h4>
                         <div class="stars">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                 class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
                         <p>
                             <i class="bi bi-quote quote-icon-left"></i>
-                            <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
-                                minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                            <span>{{__('home.testimonials_2_message')}}</span>
                             <i class="bi bi-quote quote-icon-right"></i>
                         </p>
                     </div>
@@ -430,18 +408,16 @@
 
                 <div class="swiper-slide">
                     <div class="testimonial-item">
-                        <img src="{{ asset('impact/assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img" alt="">
-                        <h3>Matt Brandon</h3>
-                        <h4>Freelancer</h4>
+                        <img style="object-fit: cover;" src="{{ asset('impact/assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img" alt="">
+                        <h3>{{__('home.testimonials_3_client')}}</h3>
+                        <h4>{{__('home.testimonials_3_position')}}</h4>
                         <div class="stars">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                 class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
                         <p>
                             <i class="bi bi-quote quote-icon-left"></i>
-                            <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
-                                velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
-                                veniam.</span>
+                            <span>{{__('home.testimonials_3_message')}}</span>
                             <i class="bi bi-quote quote-icon-right"></i>
                         </p>
                     </div>
@@ -449,18 +425,50 @@
 
                 <div class="swiper-slide">
                     <div class="testimonial-item">
-                        <img src="{{ asset('impact/assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img" alt="">
-                        <h3>John Larson</h3>
-                        <h4>Entrepreneur</h4>
+                        <img src="{{ asset('impact/assets/img/testimonials/testimonials-6.jpg') }}" class="testimonial-img" alt="">
+                        <h3>{{__('home.testimonials_4_client')}}</h3>
+                        <h4>{{__('home.testimonials_4_position')}}</h4>
                         <div class="stars">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                 class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
                         <p>
                             <i class="bi bi-quote quote-icon-left"></i>
-                            <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
-                                culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum
-                                quid.</span>
+                            <span>{{__('home.testimonials_4_message')}}</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="{{ asset('impact/assets/img/testimonials/testimonials-9.jpg') }}" class="testimonial-img" alt="">
+                        <h3>{{__('home.testimonials_5_client')}}</h3>
+                        <h4>{{__('home.testimonials_5_position')}}</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>{{__('home.testimonials_5_message')}}</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <img src="{{ asset('impact/assets/img/testimonials/testimonials-7.jpg') }}" class="testimonial-img" alt="">
+                        <h3>{{__('home.testimonials_6_client')}}</h3>
+                        <h4>{{__('home.testimonials_6_position')}}</h4>
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>{{__('home.testimonials_6_message')}}</span>
                             <i class="bi bi-quote quote-icon-right"></i>
                         </p>
                     </div>
@@ -472,16 +480,16 @@
 
     </div>
 
-</section><!-- /Testimonials Section -->
+</section><!-- End Testimonials Section -->
 
-<!-- Portfolio Section -->
+<!-- Portfolio Section 
 <section id="portfolio" class="portfolio section">
 
-    <!-- Section Title -->
+    {{-- Section Title --}}
     <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
+    </div>{{-- End Section Title --}}
 
     <div class="container">
 
@@ -493,7 +501,7 @@
                 <li data-filter=".filter-product">Product</li>
                 <li data-filter=".filter-branding">Branding</li>
                 <li data-filter=".filter-books">Books</li>
-            </ul><!-- End Portfolio Filters -->
+            </ul>{{-- End Portfolio Filters --}}
 
             <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
@@ -506,7 +514,7 @@
                             <p>Lorem ipsum, dolor sit amet consectetur</p>
                         </div>
                     </div>
-                </div><!-- End Portfolio Item -->
+                </div>{{-- End Portfolio Item --}}
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                     <div class="portfolio-content h-100">
@@ -517,7 +525,7 @@
                             <p>Lorem ipsum, dolor sit amet consectetur</p>
                         </div>
                     </div>
-                </div><!-- End Portfolio Item -->
+                </div>{{-- End Portfolio Item --}}
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
                     <div class="portfolio-content h-100">
@@ -528,7 +536,7 @@
                             <p>Lorem ipsum, dolor sit amet consectetur</p>
                         </div>
                     </div>
-                </div><!-- End Portfolio Item -->
+                </div>{{-- End Portfolio Item --}}
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                     <div class="portfolio-content h-100">
@@ -539,7 +547,7 @@
                             <p>Lorem ipsum, dolor sit amet consectetur</p>
                         </div>
                     </div>
-                </div><!-- End Portfolio Item -->
+                </div>{{-- End Portfolio Item --}}
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                     <div class="portfolio-content h-100">
@@ -550,7 +558,7 @@
                             <p>Lorem ipsum, dolor sit amet consectetur</p>
                         </div>
                     </div>
-                </div><!-- End Portfolio Item -->
+                </div>{{-- End Portfolio Item --}}
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                     <div class="portfolio-content h-100">
@@ -561,7 +569,7 @@
                             <p>Lorem ipsum, dolor sit amet consectetur</p>
                         </div>
                     </div>
-                </div><!-- End Portfolio Item -->
+                </div>{{-- End Portfolio Item --}}
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
                     <div class="portfolio-content h-100">
@@ -572,7 +580,7 @@
                             <p>Lorem ipsum, dolor sit amet consectetur</p>
                         </div>
                     </div>
-                </div><!-- End Portfolio Item -->
+                </div>{{-- End Portfolio Item --}}
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                     <div class="portfolio-content h-100">
@@ -583,7 +591,7 @@
                             <p>Lorem ipsum, dolor sit amet consectetur</p>
                         </div>
                     </div>
-                </div><!-- End Portfolio Item -->
+                </div>{{-- End Portfolio Item --}}
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                     <div class="portfolio-content h-100">
@@ -594,7 +602,7 @@
                             <p>Lorem ipsum, dolor sit amet consectetur</p>
                         </div>
                     </div>
-                </div><!-- End Portfolio Item -->
+                </div>{{-- End Portfolio Item --}}
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
                     <div class="portfolio-content h-100">
@@ -605,7 +613,7 @@
                             <p>Lorem ipsum, dolor sit amet consectetur</p>
                         </div>
                     </div>
-                </div><!-- End Portfolio Item -->
+                </div>{{-- End Portfolio Item --}}
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
                     <div class="portfolio-content h-100">
@@ -616,7 +624,7 @@
                             <p>Lorem ipsum, dolor sit amet consectetur</p>
                         </div>
                     </div>
-                </div><!-- End Portfolio Item -->
+                </div>{{-- End Portfolio Item --}}
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
                     <div class="portfolio-content h-100">
@@ -627,24 +635,24 @@
                             <p>Lorem ipsum, dolor sit amet consectetur</p>
                         </div>
                     </div>
-                </div><!-- End Portfolio Item -->
+                </div>{{-- End Portfolio Item --}}
 
-            </div><!-- End Portfolio Container -->
+            </div>{{-- End Portfolio Container --}}
 
         </div>
 
-    </div>
+    </div> 
 
-</section><!-- /Portfolio Section -->
+</section>{{--End Portfolio Section--}}-->
 
 <!-- Team Section -->
-<section id="team" class="team section">
+<!-- <section id="team" class="team section">
 
-    <!-- Section Title -->
+    {{-- Section Title --}}
     <div class="container section-title" data-aos="fade-up">
         <h2>Our Team</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
+    </div>{{-- End Section Title --}}
 
     <div class="container">
 
@@ -662,7 +670,7 @@
                         <a href=""><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
-            </div><!-- End Team Member -->
+            </div>{{-- End Team Member --}}
 
             <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
                 <div class="member">
@@ -676,7 +684,7 @@
                         <a href=""><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
-            </div><!-- End Team Member -->
+            </div>{{-- End Team Member --}}
 
             <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
                 <div class="member">
@@ -690,7 +698,7 @@
                         <a href=""><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
-            </div><!-- End Team Member -->
+            </div>{{-- End Team Member --}}
 
             <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
                 <div class="member">
@@ -704,13 +712,13 @@
                         <a href=""><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
-            </div><!-- End Team Member -->
+            </div>{{-- End Team Member --}}
 
         </div>
 
     </div>
 
-</section><!-- /Team Section -->
+</section>-->{{--End Team Section--}}
 
 <!-- Pricing Section -->
 
