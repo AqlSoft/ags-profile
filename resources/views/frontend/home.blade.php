@@ -804,72 +804,52 @@
 <section id="faq" class="faq section">
 
     <div class="container">
-
         <div class="row gy-4">
-
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="content px-xl-5">
-                    <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+                    <h3><span>{{__('home.faq_normal')}} </span><strong>{{__('home.faq_bold')}}</strong></h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                       {{__('home.faq_message')}}
                     </p>
                 </div>
             </div>
-
             <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-
                 <div class="faq-container">
                     <div class="faq-item faq-active">
-                        <h3><span class="num">1.</span> <span>Non consectetur a erat nam at lectus urna duis?</span></h3>
+                        <h3><span class="num">1.</span> <span>{{__('home.faq_question_1')}}</span></h3>
                         <div class="faq-content">
-                            <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
-                                gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                            <p>{{__('home.faq_answer_1')}}</p>
+                        </div>
+                        <i class="faq-toggle bi bi-chevron-right"></i>
+                    </div><!-- End Faq item-->
+                    <div class="faq-item">
+                        <h3><span class="num">2.</span> <span>{{__('home.faq_question_2')}}</span></h3>
+                        <div class="faq-content">
+                            <p>{{__('home.faq_answer_2')}}</p>
                         </div>
                         <i class="faq-toggle bi bi-chevron-right"></i>
                     </div><!-- End Faq item-->
 
                     <div class="faq-item">
-                        <h3><span class="num">2.</span> <span>Feugiat scelerisque varius morbi enim nunc faucibus a
-                                pellentesque?</span></h3>
+                        <h3><span class="num">3.</span> <span>{{__('home.faq_question_3')}}</span></h3>
                         <div class="faq-content">
-                            <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet
-                                id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
-                                elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                            <p>{{__('home.faq_answer_3')}}</p>
                         </div>
                         <i class="faq-toggle bi bi-chevron-right"></i>
                     </div><!-- End Faq item-->
 
                     <div class="faq-item">
-                        <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span>
-                        </h3>
+                        <h3><span class="num">4.</span> <span>{{__('home.faq_question_4')}}</span></h3>
                         <div class="faq-content">
-                            <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
-                                elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque
-                                eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis
-                                sed odio morbi quis</p>
+                            <p>{{__('home.faq_answer_4')}}</p>
                         </div>
                         <i class="faq-toggle bi bi-chevron-right"></i>
                     </div><!-- End Faq item-->
 
                     <div class="faq-item">
-                        <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span>
-                        </h3>
+                        <h3><span class="num">5.</span> <span>{{__('home.faq_question_5')}}</span></h3>
                         <div class="faq-content">
-                            <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet
-                                id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque
-                                elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                    <div class="faq-item">
-                        <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor
-                                consequat?</span></h3>
-                        <div class="faq-content">
-                            <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in.
-                                Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.
-                                Purus gravida quis blandit turpis cursus in</p>
+                            <p>{{__('home.faq_answer_5')}}</p>
                         </div>
                         <i class="faq-toggle bi bi-chevron-right"></i>
                     </div><!-- End Faq item-->
@@ -884,13 +864,13 @@
 </section><!-- /Faq Section -->
 
 <!-- Recent Posts Section -->
-<section id="recent-posts" class="recent-posts section">
+<!--<section id="recent-posts" class="recent-posts section">
 
-    <!-- Section Title -->
+    
     <div class="container section-title" data-aos="fade-up">
         <h2>Recent Blog Posts</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
+    </div>
 
     <div class="container">
 
@@ -920,7 +900,7 @@
                     </div>
 
                 </article>
-            </div><!-- End post list item -->
+            </div>
 
             <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <article>
@@ -946,7 +926,7 @@
                     </div>
 
                 </article>
-            </div><!-- End post list item -->
+            </div>
 
             <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <article>
@@ -972,21 +952,21 @@
                     </div>
 
                 </article>
-            </div><!-- End post list item -->
+            </div>
 
-        </div><!-- End recent posts list -->
+        </div>
 
     </div>
 
-</section><!-- /Recent Posts Section -->
+</section> Recent Posts Section -->
 
 <!-- Contact Section -->
 <section id="contact" class="contact section">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>{{__('home.contact_us_section_title')}}</h2>
+        <p>{{__('home.contact_us_section_message')}}</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -995,68 +975,49 @@
 
             <div class="col-lg-4">
                 <div class="info-container d-flex flex-column align-items-center justify-content-center">
+                    @foreach($contacts as $contact)
                     <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200" style="background: #94d82d;">
-                        <i class="bi bi-geo-alt flex-shrink-0"></i>
+                        <i class="{{$contact['icon']}} flex-shrink-0"></i>
                         <div>
-                            <h3>Address</h3>
-                            <p>A108 Adam Street, New York, NY 535022</p>
+                            <h3>{{$contact['title'][app()->getLocale()]}}</h3>
+                            <p>{{$contact['value']}}</p>
                         </div>
                     </div><!-- End Info Item -->
-
-                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300" style="background: #94d82d;">
-                        <i class="bi bi-telephone flex-shrink-0"></i>
-                        <div>
-                            <h3>Call Us</h3>
-                            <p>+1 5589 55488 55</p>
-                        </div>
-                    </div><!-- End Info Item -->
-
-                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400" style="background: #94d82d;">
-                        <i class="bi bi-envelope flex-shrink-0"></i>
-                        <div>
-                            <h3>Email Us</h3>
-                            <p>info@example.com</p>
-                        </div>
-                    </div><!-- End Info Item -->
-
-                    <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500" style="background: #94d82d;">
-                        <i class="bi bi-clock flex-shrink-0"></i>
-                        <div>
-                            <h3>Open Hours:</h3>
-                            <p>Mon-Sat: 11AM - 23PM</p>
-                        </div>
-                    </div><!-- End Info Item -->
-
+                    @endforeach
                 </div>
 
             </div>
 
             <div class="col-lg-8">
-                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade" data-aos-delay="100">
+                <form action="forms/contact" method="post" class="php-email-form" data-aos="fade" data-aos-delay="100">
                     <div class="row gy-4">
 
                         <div class="col-md-6">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                            <input type="text" name="name" class="form-control" 
+                            placeholder="{{__('home.contact_us_form_name_placeholder')}}" required="">
                         </div>
 
                         <div class="col-md-6 ">
-                            <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                            <input type="email" class="form-control" name="email" 
+                            placeholder="{{__('home.contact_us_form_email_placeholder')}}" required="">
                         </div>
 
                         <div class="col-md-12">
-                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                            <input type="text" class="form-control" name="subject" 
+                            placeholder="{{__('home.contact_us_form_subject')}}" required="">
                         </div>
 
                         <div class="col-md-12">
-                            <textarea class="form-control" name="message" rows="8" placeholder="Message" required=""></textarea>
+                            <textarea class="form-control" name="message" rows="8" 
+                            placeholder="{{__('home.contact_us_form_message_placeholder')}}" required=""></textarea>
                         </div>
 
                         <div class="col-md-12 text-center">
                             <div class="loading">Loading</div>
                             <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                            <div class="sent-message">{{__('contact_us_form_meaasge_sent')}}</div>
 
-                            <button type="submit">Send Message</button>
+                            <button type="submit">{{__('home.contact_us_form_send_button')}}</button>
                         </div>
 
                     </div>
@@ -1112,12 +1073,21 @@
     </div>
 </section> -->
 <!-- End Products Section -->
+@if(App::getLocale() == 'ar')
+    <style>
+        button#newsletter-subscribe-btn {
+            border-radius: 0;
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+        }
+    </style>
+@endif
 
 <!-- ======= Newsletter Section ======= -->
 <section id="newsletter" class="newsletter">
     <div class="container" data-aos="fade-up">
         <div class="section-header">
-            <h2>{{ __('messagesnewsletter') }}</h2>
+            <h2>{{ __('messages.newsletter') }}</h2>
             <p>{{ __('messages.newsletter_description') }}</p>
         </div>
 
@@ -1127,7 +1097,7 @@
                     @csrf
                     <div class="input-group">
                         <input type="email" name="email" class="form-control" placeholder="{{ __('messages.enter_email') }}" required>
-                        <button type="submit" class="btn btn-primary">{{ __('messages.subscribe') }}</button>
+                        <button id="newsletter-subscribe-btn" type="submit" class="btn btn-primary">{{ __('messages.subscribe') }}</button>
                     </div>
                 </form>
             </div>
