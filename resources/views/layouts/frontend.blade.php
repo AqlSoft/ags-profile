@@ -72,19 +72,18 @@
                         <li><a href="#team">{{ __('messages.team') }}</a></li>
                         <li><a href="#contact">{{ __('messages.contact') }}</a></li>
                         <li class="dropdown">
-                            <a href="#" class="nav-link">
-                                <i class="me-3 bi bi-translate"></i>
+                            <a href="#" class="nav-link dropdown-toggle">
+                                <i class="bi bi-translate"></i>
                                 <span>{{ session('locale') === 'ar' ? 'العربية' : 'English' }}</span>
-                                <i class="ms-3 bi bi-chevron-down dropdown-indicator"></i>
                             </a>
-                            <ul>
+                            <ul class="dropdown-menu">
                                 <li>
-                                    <a href="{{ url('/locale/ar') }}" class="{{ session('locale') === 'ar' ? 'active' : '' }}">
+                                    <a href="{{ url('/locale/ar') }}" class="dropdown-item {{ session('locale') === 'ar' ? 'active' : '' }}">
                                         العربية
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{ url('/locale/en') }}" class="{{ session('locale') === 'en' ? 'active' : '' }}">
+                                    <a href="{{ url('/locale/en') }}" class="dropdown-item {{ session('locale') === 'en' ? 'active' : '' }}">
                                         English
                                     </a>
                                 </li>
@@ -177,6 +176,40 @@
 
     <!-- Template Main JS File -->
     <script src="{{ asset('impact/assets/js/main.js') }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // تفعيل القائمة المنسدلة في الشاشات الصغيرة
+            const dropdowns = document.querySelectorAll('.dropdown-toggle');
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.closest('.dropdown').classList.toggle('show');
+                });
+            });
+
+            // إغلاق القائمة عند النقر على أي رابط (باستثناء روابط تغيير اللغة)
+            document.querySelectorAll('#navmenu a:not(.dropdown-toggle):not(.dropdown-item)').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (document.querySelector('.mobile-nav-active')) {
+                        document.querySelector('body').classList.remove('mobile-nav-active');
+                        document.querySelector('.mobile-nav-toggle').classList.remove('bi-x');
+                        document.querySelector('.mobile-nav-toggle').classList.add('bi-list');
+                    }
+                });
+            });
+
+            // إغلاق القائمة المنسدلة عند النقر خارجها
+            document.addEventListener('click', function(e) {
+                const dropdowns = document.querySelectorAll('.dropdown.show');
+                dropdowns.forEach(dropdown => {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove('show');
+                    }
+                });
+            });
+        });
+    </script>
 
     @php
     $messageTypes = ['success', 'error', 'warning', 'info', 'status'];

@@ -11,9 +11,9 @@
                 <p>{{__('home.hero_welcome_message')}}</p>
                 <div class="d-flex">
                     <a href="#about" class="btn-get-started">{{__('home.get_started')}}</a>
-                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center">
+                    {{-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center">
                         <i class="bi bi-play-circle"></i><span>{{__('home.watch_video')}}</span>
-                    </a>
+                    </a> --}}
                 </div>
             </div>
             <div class="col-lg-5 order-1 order-lg-2">
@@ -94,7 +94,7 @@
 
                     <div class="position-relative mt-4">
                         <img src="{{ asset('impact/assets/img/about-2.jpg') }}" class="img-fluid rounded-4" alt="">
-                        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+                        {{-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a> --}}
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
 
 
 <!-- Clients Section -->
-<section id="clients" class="clients section">
+{{-- <section id="clients" class="clients section">
 
     <div class="container">
 
@@ -155,10 +155,11 @@
                 <div class="swiper-slide"><img src="{{ asset('impact/assets/img/clients/client-8.png') }}" class="img-fluid" alt=""></div>
             </div>
         </div>
-
+        
     </div>
+    
+</section><!-- End Clients Section --> --}}
 
-</section><!-- End Clients Section -->
 
 <!-- Stats Section -->
 <section id="stats" class="stats section">
@@ -237,7 +238,7 @@
         <div class="content row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
             <div class="col-xl-10">
                 <div class="text-center">
-                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox play-btn"></a>
+                    {{-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox play-btn"></a> --}}
                     <h3>{{__('home.call_to_action_heading')}}</h3>
                     <p>{{__('home.call_to_action_message')}}</p>
                     <a class="cta-btn" href="#">{{__('home.call_to_action_button')}}</a>
@@ -482,484 +483,6 @@
 
 </section><!-- End Testimonials Section -->
 
-<!-- Portfolio Section 
-<section id="portfolio" class="portfolio section">
-
-    {{-- Section Title --}}
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div>{{-- End Section Title --}}
-
-    <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-product">Product</li>
-                <li data-filter=".filter-branding">Branding</li>
-                <li data-filter=".filter-books">Books</li>
-            </ul>{{-- End Portfolio Filters --}}
-
-            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                    <div class="portfolio-content h-100">
-                        <a href="{{ asset('impact/assets/img/portfolio/app-1.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                                src="{{ asset('impact/assets/img/portfolio/app-1.jpg') }}" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">App 1</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div>{{-- End Portfolio Item --}}
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                    <div class="portfolio-content h-100">
-                        <a href="{{ asset('impact/assets/img/portfolio/product-1.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                                src="{{ asset('impact/assets/img/portfolio/product-1.jpg') }}" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Product 1</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div>{{-- End Portfolio Item --}}
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                    <div class="portfolio-content h-100">
-                        <a href="{{ asset('impact/assets/img/portfolio/branding-1.jpg') }}" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="{{ asset('impact/assets/img/portfolio/branding-1.jpg') }}" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Branding 1</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div>{{-- End Portfolio Item --}}
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                    <div class="portfolio-content h-100">
-                        <a href="{{ asset('impact/assets/img/portfolio/books-1.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                                src="{{ asset('impact/assets/img/portfolio/books-1.jpg') }}" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Books 1</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div>{{-- End Portfolio Item --}}
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                    <div class="portfolio-content h-100">
-                        <a href="{{ asset('impact/assets/img/portfolio/app-2.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                                src="{{ asset('impact/assets/img/portfolio/app-2.jpg') }}" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">App 2</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div>{{-- End Portfolio Item --}}
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                    <div class="portfolio-content h-100">
-                        <a href="{{ asset('impact/assets/img/portfolio/product-2.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                                src="{{ asset('impact/assets/img/portfolio/product-2.jpg') }}" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Product 2</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div>{{-- End Portfolio Item --}}
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                    <div class="portfolio-content h-100">
-                        <a href="{{ asset('impact/assets/img/portfolio/branding-2.jpg') }}" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="{{ asset('impact/assets/img/portfolio/branding-2.jpg') }}" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Branding 2</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div>{{-- End Portfolio Item --}}
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                    <div class="portfolio-content h-100">
-                        <a href="{{ asset('impact/assets/img/portfolio/books-2.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                                src="{{ asset('impact/assets/img/portfolio/books-2.jpg') }}" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Books 2</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div>{{-- End Portfolio Item --}}
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                    <div class="portfolio-content h-100">
-                        <a href="{{ asset('impact/assets/img/portfolio/app-3.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                                src="{{ asset('impact/assets/img/portfolio/app-3.jpg') }}" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">App 3</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div>{{-- End Portfolio Item --}}
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                    <div class="portfolio-content h-100">
-                        <a href="{{ asset('impact/assets/img/portfolio/product-3.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                                src="{{ asset('impact/assets/img/portfolio/product-3.jpg') }}" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Product 3</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div>{{-- End Portfolio Item --}}
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                    <div class="portfolio-content h-100">
-                        <a href="{{ asset('impact/assets/img/portfolio/branding-3.jpg') }}" data-gallery="portfolio-gallery-app"
-                            class="glightbox"><img src="{{ asset('impact/assets/img/portfolio/branding-3.jpg') }}" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Branding 3</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div>{{-- End Portfolio Item --}}
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-                    <div class="portfolio-content h-100">
-                        <a href="{{ asset('impact/assets/img/portfolio/books-3.jpg') }}" data-gallery="portfolio-gallery-app" class="glightbox"><img
-                                src="{{ asset('impact/assets/img/portfolio/books-3.jpg') }}" class="img-fluid" alt=""></a>
-                        <div class="portfolio-info">
-                            <h4><a href="portfolio-details.html" title="More Details">Books 3</a></h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur</p>
-                        </div>
-                    </div>
-                </div>{{-- End Portfolio Item --}}
-
-            </div>{{-- End Portfolio Container --}}
-
-        </div>
-
-    </div> 
-
-</section>{{--End Portfolio Section--}}-->
-
-<!-- Team Section -->
-<!-- <section id="team" class="team section">
-
-    {{-- Section Title --}}
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Our Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div>{{-- End Section Title --}}
-
-    <div class="container">
-
-        <div class="row gy-4">
-
-            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-                <div class="member">
-                    <img src="{{ asset('impact/assets/img/team/team-1.jpg') }}" class="img-fluid" alt="">
-                    <h4>Walter White</h4>
-                    <span>Web Development</span>
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>{{-- End Team Member --}}
-
-            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-                <div class="member">
-                    <img src="{{ asset('impact/assets/img/team/team-2.jpg') }}" class="img-fluid" alt="">
-                    <h4>Sarah Jhinson</h4>
-                    <span>Marketing</span>
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>{{-- End Team Member --}}
-
-            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-                <div class="member">
-                    <img src="{{ asset('impact/assets/img/team/team-3.jpg') }}" class="img-fluid" alt="">
-                    <h4>William Anderson</h4>
-                    <span>Content</span>
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>{{-- End Team Member --}}
-
-            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-                <div class="member">
-                    <img src="{{ asset('impact/assets/img/team/team-4.jpg') }}" class="img-fluid" alt="">
-                    <h4>Amanda Jepson</h4>
-                    <span>Accountant</span>
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>{{-- End Team Member --}}
-
-        </div>
-
-    </div>
-
-</section>-->{{--End Team Section--}}
-
-<!-- Pricing Section -->
-
-<!-- Section Title -->
-<!-- End Section Title -->
-<!-- End Pricing Item -->
-<!-- <section id="pricing" class="pricing section">
-
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div>
-
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-
-        <div class="row g-4">
-
-            <div class="col-lg-4">
-                <div class="pricing-item">
-                    <h3>Free Plan</h3>
-                    <div class="icon">
-                        <i class="bi bi-box"></i>
-                    </div>
-                    <h4><sup>$</sup>0<span> / month</span></h4>
-                    <ul>
-                        <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                        <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                        <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                        <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                        <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                    </ul>
-                    <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="pricing-item featured">
-                    <h3>Business Plan</h3>
-                    <div class="icon">
-                        <i class="bi bi-rocket"></i>
-                    </div>
-
-                    <h4><sup>$</sup>29<span> / month</span></h4>
-                    <ul>
-                        <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                        <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                        <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                        <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                        <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                    </ul>
-                    <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-                </div>
-            </div>
-
-            <div class="col-lg-4">
-                <div class="pricing-item">
-                    <h3>Developer Plan</h3>
-                    <div class="icon">
-                        <i class="bi bi-send"></i>
-                    </div>
-                    <h4><sup>$</sup>49<span> / month</span></h4>
-                    <ul>
-                        <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                        <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                        <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                        <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                        <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                    </ul>
-                    <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- End Pricing Item -->
-<!-- End Pricing Item -->
-
-
-
-<!-- /Pricing Section -->
-
-<!-- Faq Section -->
-<section id="faq" class="faq section">
-
-    <div class="container">
-        <div class="row gy-4">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="content px-xl-5">
-                    <h3><span>{{__('home.faq_normal')}} </span><strong>{{__('home.faq_bold')}}</strong></h3>
-                    <p>
-                       {{__('home.faq_message')}}
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-                <div class="faq-container">
-                    <div class="faq-item faq-active">
-                        <h3><span class="num">1.</span> <span>{{__('home.faq_question_1')}}</span></h3>
-                        <div class="faq-content">
-                            <p>{{__('home.faq_answer_1')}}</p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-                    <div class="faq-item">
-                        <h3><span class="num">2.</span> <span>{{__('home.faq_question_2')}}</span></h3>
-                        <div class="faq-content">
-                            <p>{{__('home.faq_answer_2')}}</p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                    <div class="faq-item">
-                        <h3><span class="num">3.</span> <span>{{__('home.faq_question_3')}}</span></h3>
-                        <div class="faq-content">
-                            <p>{{__('home.faq_answer_3')}}</p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                    <div class="faq-item">
-                        <h3><span class="num">4.</span> <span>{{__('home.faq_question_4')}}</span></h3>
-                        <div class="faq-content">
-                            <p>{{__('home.faq_answer_4')}}</p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                    <div class="faq-item">
-                        <h3><span class="num">5.</span> <span>{{__('home.faq_question_5')}}</span></h3>
-                        <div class="faq-content">
-                            <p>{{__('home.faq_answer_5')}}</p>
-                        </div>
-                        <i class="faq-toggle bi bi-chevron-right"></i>
-                    </div><!-- End Faq item-->
-
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
-</section><!-- /Faq Section -->
-
-<!-- Recent Posts Section -->
-<!--<section id="recent-posts" class="recent-posts section">
-
-    
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Recent Blog Posts</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div>
-
-    <div class="container">
-
-        <div class="row gy-4">
-
-            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <article>
-
-                    <div class="post-img">
-                        <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
-                    </div>
-
-                    <p class="post-category">Politics</p>
-
-                    <h2 class="title">
-                        <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-                    </h2>
-
-                    <div class="d-flex align-items-center">
-                        <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                        <div class="post-meta">
-                            <p class="post-author">Maria Doe</p>
-                            <p class="post-date">
-                                <time datetime="2022-01-01">Jan 1, 2022</time>
-                            </p>
-                        </div>
-                    </div>
-
-                </article>
-            </div>
-
-            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <article>
-
-                    <div class="post-img">
-                        <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
-                    </div>
-
-                    <p class="post-category">Sports</p>
-
-                    <h2 class="title">
-                        <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
-                    </h2>
-
-                    <div class="d-flex align-items-center">
-                        <img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                        <div class="post-meta">
-                            <p class="post-author">Allisa Mayer</p>
-                            <p class="post-date">
-                                <time datetime="2022-01-01">Jun 5, 2022</time>
-                            </p>
-                        </div>
-                    </div>
-
-                </article>
-            </div>
-
-            <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <article>
-
-                    <div class="post-img">
-                        <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
-                    </div>
-
-                    <p class="post-category">Entertainment</p>
-
-                    <h2 class="title">
-                        <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-                    </h2>
-
-                    <div class="d-flex align-items-center">
-                        <img src="assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                        <div class="post-meta">
-                            <p class="post-author">Mark Dower</p>
-                            <p class="post-date">
-                                <time datetime="2022-01-01">Jun 22, 2022</time>
-                            </p>
-                        </div>
-                    </div>
-
-                </article>
-            </div>
-
-        </div>
-
-    </div>
-
-</section> Recent Posts Section -->
-
 <!-- Contact Section -->
 <section id="contact" class="contact section">
 
@@ -978,7 +501,7 @@
                     @foreach($contacts as $contact)
                     <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200" style="background: #94d82d;">
                         <i class="{{$contact['icon']}} flex-shrink-0"></i>
-                        <div>
+                        <div dir="ltr">
                             <h3>{{$contact['title'][app()->getLocale()]}}</h3>
                             <p>{{$contact['value']}}</p>
                         </div>
@@ -989,9 +512,34 @@
             </div>
 
             <div class="col-lg-8">
-                <form action="forms/contact" method="post" class="php-email-form" data-aos="fade" data-aos-delay="100">
-                    <div class="row gy-4">
+                @if(session('success'))
+                <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
 
+                @if(session('error'))
+                <div class="alert alert-danger alert-dismissible fade show mb-4" role="alert">
+                    {{ session('error') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+
+                @if($errors->any())
+                <div class="alert alert-danger alert-dismissible fade show mb-4" role="alert">
+                    <ul class="mb-0 list-unstyled">
+                        @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+
+                <form action="{{route('contact-message-store')}}" method="post" class="php-email-form" data-aos="fade" data-aos-delay="100">
+                    <div class="row gy-4">
+                        @csrf
                         <div class="col-md-6">
                             <input type="text" name="name" class="form-control" 
                             placeholder="{{__('home.contact_us_form_name_placeholder')}}" required="">
@@ -1084,21 +632,42 @@
 @endif
 
 <!-- ======= Newsletter Section ======= -->
-<section id="newsletter" class="newsletter">
-    <div class="container" data-aos="fade-up">
-        <div class="section-header">
-            <h2>{{ __('messages.newsletter') }}</h2>
-            <p>{{ __('messages.newsletter_description') }}</p>
-        </div>
-
+<section id="newsletter" class="newsletter-section py-5 accent-background">
+    <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <form action="{{ route('newsletter-subscribe') }}" method="post">
-                    @csrf
-                    <div class="input-group">
-                        <input type="email" name="email" class="form-control" placeholder="{{ __('messages.enter_email') }}" required>
-                        <button id="newsletter-subscribe-btn" type="submit" class="btn btn-primary">{{ __('messages.subscribe') }}</button>
+            <div class="col-md-8 text-center">
+                <h2 class="section-title mb-4">{{ __('home.newsletter_title') }}</h2>
+                <p class="section-description mb-4">{{ __('home.newsletter_description') }}</p>
+
+                @if(session('success'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ session('success') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
+                @endif
+
+                @if(session('error'))
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        {{ session('error') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endif
+
+                <form action="{{ route('newsletter-subscribe') }}" method="POST" class="newsletter-form">
+                    @csrf
+                    <div class="input-group mb-3">
+                        <input type="email" name="email" class="form-control p-3 @error('email') is-invalid @enderror" 
+                               placeholder="{{ __('home.newsletter_email_placeholder') }}" 
+                               value="{{ old('email') }}" required>
+                        <button class="btn btn-primary" type="submit">
+                            {{ __('home.newsletter_subscribe_button') }}
+                        </button>
+                    </div>
+                    @error('email')
+                        <div class="invalid-feedback d-block">
+                            {{ $message }}
+                        </div>
+                    @enderror
                 </form>
             </div>
         </div>

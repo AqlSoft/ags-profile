@@ -208,3 +208,32 @@
 .footer .social-links a:hover {
     background: var(--primary-color);
 }
+
+/* Mobile Navigation Dropdown */
+@media (max-width: 1024px) {
+    .mobile-nav-active .navmenu .dropdown .dropdown-menu {
+        position: static;
+        display: none;
+        padding: 10px 0;
+        margin: 10px 20px;
+        background: rgba(30, 30, 30, 0.9);
+        border-radius: 5px;
+    }
+
+    .mobile-nav-active .navmenu .dropdown.show .dropdown-menu {
+        display: block;
+    }
+
+    .mobile-nav-active .navmenu .dropdown-item {
+        padding: 8px 20px;
+        color: #ffffff;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-nav-active .navmenu .dropdown-item:hover,
+    .mobile-nav-active .navmenu .dropdown-item.active {
+        background: var(--primary-color);
+        color: #ffffff;
+    }
+}

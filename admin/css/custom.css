@@ -1,0 +1,21 @@
+#testimonials .swiper-wrapper {
+    height: 520px !important;
+    padding: 0 1.5rem !important;
+}
+
+#testimonials .swiper-slide {
+    height: 480px !important;
+    overflow: hidden !important;
+    box-shadow: none !important;
+    margin: 1rem 1.5rem;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.05) !important;
+}
+
+#testimonials .swiper-slide-active {
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+#testimonials .testimonial-item {
+    height: 450px !important;
+    margin: 0 !important;
+}

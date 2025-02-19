@@ -27,6 +27,7 @@ Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'send'])->name('contact-send');
 Route::post('/newsletter/subscribe', [NewsletterController::class, 'subscribe'])->name('newsletter-subscribe');
+Route::post('contact/messages/store', [ContactController::class, 'store'])->name('contact-message-store');
 
 // Admin routes
 Route::prefix('admin')->group(function () {
@@ -53,7 +54,6 @@ Route::prefix('admin')->group(function () {
         Route::prefix('messages')->name('messages-')->group(function () {
             Route::get('index', [MessageController::class, 'index'])->name('index');
             Route::get('create', [MessageController::class, 'create'])->name('create');
-            Route::post('store', [MessageController::class, 'store'])->name('store');
             Route::get('edit/{message}', [MessageController::class, 'edit'])->name('edit');
             Route::put('update/{message}', [MessageController::class, 'update'])->name('update');
             Route::delete('delete/{message}', [MessageController::class, 'destroy'])->name('delete');

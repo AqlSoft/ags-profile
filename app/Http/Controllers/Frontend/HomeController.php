@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Product;
 use App\Models\Language;
+use App\Models\Partner;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
 
@@ -54,11 +55,13 @@ class HomeController extends Controller
             // ]
         ];
 
+        $partners = Partner::all();
+
         // الحصول على اللغة الافتراضية وقائمة اللغات
         $defaultLanguage = Language::getDefault();
         $languages = Language::getList();
 
-        return view('frontend.home', compact('products', 'contacts', 'languages', 'defaultLanguage'));
+        return view('frontend.home', compact('products', 'contacts', 'partners', 'languages', 'defaultLanguage'));
     }
 
     public function setLocale($locale)
